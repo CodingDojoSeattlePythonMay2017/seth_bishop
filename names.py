@@ -10,10 +10,10 @@ def printStudents(students):
     for i in students:
         print i['first_name'], i['last_name']
 
+print "Part 1:"
+printStudents(students)
 
-# printStudents(students)
-
-
+print " "
 #Part 2
 users = {
  'Students': [
@@ -28,7 +28,6 @@ users = {
   ]
  }
 
-
 def printStudentsAndInstructors(users):
     for key, data in users.items():
         count = 0
@@ -37,4 +36,5 @@ def printStudentsAndInstructors(users):
             count += 1
             print count, "-", value["first_name"], value["last_name"], "-", len(value["first_name"]) + len(value["last_name"])
 
+print "Part 2:"
 printStudentsAndInstructors(users)
